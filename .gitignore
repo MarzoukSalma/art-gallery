@@ -1,0 +1,19 @@
+# Environnements virtuels
+venv/
+.venv/
+.venv1/
+
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Données temporaires
+gallery/

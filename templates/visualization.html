@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="max-w-6xl mx-auto">
+    <div class="mt-14">
+    <h1 class="text-4xl font-bold mb-10 text-center">Data Visualization</h1>
+
+    {% if error %}
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4">
+        {{ error }}
+    </div>
+    {% endif %}
+
+    <div class="grid grid-cols-1 gap-8">
+        <!-- Choropleth Map -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">World Happiness Map</h2>
+            <div id="choropleth" class="w-full h-96">
+                {{ plots.choropleth | safe }}
+            </div>
+        </div>
+
+        <!-- Bar Chart -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Top 10 Happiest Countries</h2>
+            <div id="bar_chart" class="w-full h-96">
+                {{ plots.bar_chart | safe }}
+            </div>
+        </div>
+
+        <!-- Scatter Plot -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">GDP vs Happiness Score</h2>
+            <div id="scatter_plot" class="w-full h-96">
+                {{ plots.scatter_plot | safe }}
+            </div>
+        </div>
+
+        <!-- Animated Scatter Plot -->
+        <div class="bg-white p-6 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Happiness Evolution Over Years</h2>
+            <div id="animated_scatter_plot" class="w-full h-96">
+                {{ plots.animated_scatter_plot | safe }}
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
