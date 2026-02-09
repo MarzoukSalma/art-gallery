@@ -1,111 +1,157 @@
-# 🎨 Art Gallery – Interactive Generative Art Platform
 
-## 📌 Project Overview
+# 🎨 Art Gallery – Interactive Generative Art Project
 
-**Art Gallery** is an academic project that combines **generative art**, **data visualization**, **image/audio manipulation**, and **web interactivity** into a single interactive platform.
+## 1. Project Description
 
-The project is implemented in **Python** and delivered as a **Flask web application**, allowing users to explore, generate, transform, and interact with digital artworks in real time.
+**Art Gallery** is an academic Python project that combines:
+- Generative Art
+- Data Visualization
+- Image & Audio Manipulation
+- Interactivity
+- Web Integration with Flask
+- Machine Learning features
 
-This project follows an **object-oriented programming (OOP)** approach and integrates multiple Python libraries commonly used in creative coding and data science.
-
----
-
-## 🎯 Academic Objectives
-
-This project fulfills the following academic requirements:
-
-### 1. Generative Art
-- Creation of **multiple unique generative artworks**
-- Use of:
-  - Python
-  - Object-Oriented Programming (OOP)
-  - Loops and conditionals
-- Interactive features such as:
-  - Drawing tools
-  - Color selection
-  - User-controlled parameters
-
-### 2. Data-Driven Visualization
-- Use of **real or simulated datasets**
-- Artistic visualizations using:
-  - Pandas
-  - Matplotlib
-- Visual outputs such as:
-  - Abstract charts
-  - Stylized graphs
-
-### 3. Image & Audio Manipulation
-- Image processing using:
-  - OpenCV
-  - Pillow (PIL)
-- Audio processing using:
-  - PyDub
-- Features include:
-  - Image filters and effects
-  - Audio transformations (speed, effects, layering)
-
-### 4. Interactivity
-- User interaction through:
-  - Flask web interface
-  - Pygame-based tools
-- Gallery navigation with:
-  - Artwork previews
-  - Image saving and browsing
-
-### 5. Web Integration
-- Flask web application
-- Jinja2 templating
-- Dynamic routes for:
-  - Uploading images
-  - Generating artworks
-  - Displaying results
-
-### 6. Bonus – Machine Learning 
-- AI-based features such as:
-  - Image caption generation
-  - Artistic transformations
-- Integration of:
-  - PyTorch
-  - Transformers / Hugging Face models
-- Optional neural style transfer module
+The project allows users to generate, visualize, modify, and interact with artworks through a web interface.
 
 ---
 
-## 🗂 Project Structure
+## 2. Academic Requirements Covered
+
+### ✔ Generative Art
+- Python + Object-Oriented Programming
+- Use of loops and conditionals
+- Interactive drawing and artwork generation
+
+### ✔ Data-Driven Visualization
+- Pandas + Matplotlib
+- Artistic visual representations of data
+
+### ✔ Image & Audio Manipulation
+- Image processing with OpenCV & Pillow
+- Audio effects with PyDub
+
+### ✔ Interactivity
+- User interaction through Flask
+- Artwork gallery navigation
+
+### ✔ Web Integration
+- Flask backend
+- Jinja2 templates
+- Dynamic routes and rendering
+
+### ✔ Bonus (Optional)
+- Machine Learning (PyTorch, Transformers)
+- Image caption generation
+- Style transfer (can be disabled if needed)
+
+---
+
+## 3. Project Structure
+
+```
+
 art-gallery/
-
 │
-├── app.py # Main Flask application
-
-├── requirements.txt # Python dependencies
-
+├── app.py
+├── requirements.txt
+├── drawing_tool.py
+├── visualization.py
+├── image_effects.py
+├── audio_processor.py
+├── generate_descriptions.py
+├── style_transfer.py
 │
-├── templates/ # HTML templates (Jinja2)
-│ ├── index.html
-│ ├── gallery.html
-│
+├── templates/
 ├── static/
-│ ├── css/
-│ ├── gallery/ # Generated artworks
-│
-├── gallery/ # Saved images
-│
-├── drawing_tool.py # Generative drawing logic (OOP)
-├── visualization.py # Data visualization module
-├── image_effects.py # Image processing functions
-├── audio_processor.py # Audio manipulation module
-├── generate_descriptions.py # AI-based text/image descriptions
-├── style_transfer.py # Neural style transfer 
-│
-└── fast-neural-style/ # External ML module 
+├── gallery/
+└── fast-neural-style/  
 
+````
 
 ---
 
-## ⚙️ Installation & Setup
+## 4. Setup Instructions (All Steps)
 
-### 1. Clone the Repository
+### Step 1 – Clone the Repository
 ```bash
 git clone https://github.com/MarzoukSalma/art-gallery.git
 cd art-gallery
+````
+
+---
+
+### Step 2 – Create Virtual Environment
+
+python -m venv venv
+```
+
+Activate it:
+
+**Windows**
+
+
+venv\Scripts\activate
+
+
+**Linux / macOS**
+
+
+source venv/bin/activat
+
+---
+
+### Step 3 – Install Dependencies
+
+
+pip install --upgrade pip
+pip install -r requirements.txt
+
+
+⚠️ Note:
+
+* Some ML libraries are heavy (PyTorch, Transformers).
+* If disk space is limited, ML features can be disabled without affecting core functionality.
+
+---
+
+### Step 4 – Run the Application
+
+
+python app.py
+
+
+Open in browser:
+
+
+http://127.0.0.1:5000
+
+
+---
+
+
+## 6. Known Issues & Solutions
+
+### Style Transfer / Torch Errors
+
+If PyTorch causes errors:
+
+* Comment or disable `style_transfer.py`
+* The project remains fully functional without it
+
+### Audio Issues
+
+* `simpleaudio` may fail on Windows
+* Audio features can still work via PyDub
+
+
+---
+
+## 8. Author
+
+**Salma Marzouk**
+Academic Project – Interactive Generative Art
+Python · Flask · Creative Coding 
+
+---
+
 
