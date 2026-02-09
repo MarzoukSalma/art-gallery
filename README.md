@@ -73,9 +73,12 @@ This project fulfills the following academic requirements:
 
 ## 🗂 Project Structure
 art-gallery/
+
 │
 ├── app.py # Main Flask application
+
 ├── requirements.txt # Python dependencies
+
 │
 ├── templates/ # HTML templates (Jinja2)
 │ ├── index.html
