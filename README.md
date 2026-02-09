@@ -148,7 +148,7 @@ If PyTorch causes errors:
 
 ## 8. Author
 
-**Salma Marzouk**
+Salma Marzouk
 Academic Project – Interactive Generative Art
 Python · Flask · Creative Coding · AI
 ---
