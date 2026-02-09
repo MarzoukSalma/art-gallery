@@ -150,8 +150,7 @@ If PyTorch causes errors:
 
 **Salma Marzouk**
 Academic Project – Interactive Generative Art
-Python · Flask · Creative Coding 
-
+Python · Flask · Creative Coding · AI
 ---
 
 
