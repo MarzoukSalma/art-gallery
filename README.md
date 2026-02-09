@@ -72,4 +72,37 @@ This project fulfills the following academic requirements:
 ---
 
 ## 🗂 Project Structure
+art-gallery/
+│
+├── app.py # Main Flask application
+├── requirements.txt # Python dependencies
+│
+├── templates/ # HTML templates (Jinja2)
+│ ├── index.html
+│ ├── gallery.html
+│
+├── static/
+│ ├── css/
+│ ├── gallery/ # Generated artworks
+│
+├── gallery/ # Saved images
+│
+├── drawing_tool.py # Generative drawing logic (OOP)
+├── visualization.py # Data visualization module
+├── image_effects.py # Image processing functions
+├── audio_processor.py # Audio manipulation module
+├── generate_descriptions.py # AI-based text/image descriptions
+├── style_transfer.py # Neural style transfer 
+│
+└── fast-neural-style/ # External ML module 
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/MarzoukSalma/art-gallery.git
+cd art-gallery
 
