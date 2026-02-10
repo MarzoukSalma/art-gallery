@@ -87,14 +87,12 @@ python -m venv venv
 
 Activate it:
 
-**Windows**
-
+-Windows:
 
 venv\Scripts\activate
 
 
-**Linux / macOS**
-
+ -Linux / macOS
 
 source venv/bin/activat
 
