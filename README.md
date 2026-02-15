@@ -39,7 +39,7 @@ The project allows users to generate, visualize, modify, and interact with artwo
 - Jinja2 templates
 - Dynamic routes and rendering
 
-### ✔ Bonus (Optional)
+### ✔ Machine Learning features
 - Machine Learning (PyTorch, Transformers)
 - Image caption generation
 - Style transfer (can be disabled if needed)
